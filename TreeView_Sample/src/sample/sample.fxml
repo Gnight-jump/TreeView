@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1034.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.control">
+   <children>
+      <TreeView fx:id="tree_map" nodeOrientation="LEFT_TO_RIGHT" prefHeight="599.0" prefWidth="313.0" />
+      <ImageView fx:id="img_view" fitHeight="521.0" fitWidth="720.0" layoutX="313.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <Separator layoutX="310.0" layoutY="2.0" orientation="VERTICAL" prefHeight="599.0" prefWidth="4.0" />
+      <ProgressBar layoutY="595.0" prefHeight="28.0" prefWidth="1034.0" progress="0.0" />
+      <Label fx:id="text_road" alignment="CENTER" layoutX="316.0" layoutY="2.0" prefHeight="34.0" prefWidth="406.0" text="当前路径">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Label>
+      <Button fx:id="btn_up" layoutX="716.0" layoutY="4.0" mnemonicParsing="false" text="上传图片" textFill="#553ab5" />
+      <Button fx:id="btn_close" layoutX="923.0" layoutY="4.0" mnemonicParsing="false" onAction="#eventClose" text="关闭当前图片" />
+      <Separator layoutX="313.0" layoutY="33.0" prefHeight="12.0" prefWidth="720.0" />
+      <SplitMenuButton fx:id="btn_more" layoutX="804.0" layoutY="4.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="保存">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </SplitMenuButton>
+   </children>
+</Pane>
